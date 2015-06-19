@@ -1,0 +1,72 @@
+
+
+
+
+
+
+
+
+Praktikumsbericht
+
+Michael Sandritter
+AOE GmbH
+
+Datum 13.03.2015
+Zeitraum: 09.März - 09.Juni 2015
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Praktikumsbetrieb
+
+Mein Praktikum habe ich bei der AOE Gmbh in Wiesbaden absolviert. Die AOE GmbH hat seinen Hauptsitz in Wiesbaden und ist Dienstleister für Open Source Enterprise Lösungen. AOE wurde 1999 unter dem Firmennamen AOE media gegründet und arbeitete anfänglich als TYPO3 Dienstleister. Inzwischen umfassen die Serviceleistungen Open Source Web Portale, E-Commerce und mobile Anwendungen, die für globale agierende Unternehmen entwickelt werden. 
+Das Kollegium umfasst 180 Entwickler und Consultants an 8 Standorten, davon 120 Mitarbeiter in der Zentrale in Wiesbaden. 
+Die Unternehmenskultur setzt auf die Kernelemente: Open Source, objektorientierte Programmierung und Methoden wie Agile Software-Entwicklung und Test-Driven-Development. 
+
+Dabei pflegt die AOE GmbH eine dezentrale Unternehmensstruktur. Jedem Kunden wird ein Team aus Entwicklern zur Seite gestellt. Das Team arbeitet von dort ab komplett selbstständig und setzt alle Projektphasen in engem Kontakt mit dem Kunden um.
+
+
+Arbeitsumfeld
+
+In meinem Praktikum wurde ich vorwiegend als Backend-Entwickler im Congstar-Team eingesetzt. Das Team bestand dabei aus 19 Entwicklern und acht Testern, die sich ihrerseits wieder in 3 kleinere Teams aufteilen. Die Frontend bzw. Backend-Kompetenzen waren dabei gleichmäßig auf die verschiedenen Teams verteilt, so dass jedes Team, für sich, in der Lage war sowohl Backend- als auch FrontendßTasks zu übernehmen.
+
+Jedes Team arbeitet nach der agilen Softwareentwicklungsmethodik “Scrum”. In täglichen Daily Meetings tauschen sich die Entwickler in ihren kleinen Teams über den aktuellen Entwicklungsstand aus, indem jeder Entwickler und Tester, dem Team erzählt, woran er gerade arbeitet und gegebenenfalls schildert welche Probleme bei der Umsetzung existieren.
+Zusätzlich finden zwei mal wöchentlich Weekly Meetings statt, bei denen alle Entwickler und Tester zu einem übergreifenden Update des Entwicklungsstand zusammenkommen. In der großen Runde werden Themen besprochen, die das komplette Team betreffen. Dazu gehört zum Beispiel, das Einführen und Verwenden neuer Technologien, das Entwickeln oder Ändern der Software Architektur und generelle organisatorische Themen.
+
+Der zeitliche Rahmen gibt vor, dass dem Kunden alle zwei Monate ein neues Softwarepaket mit neuen Features ausgeliefert wird. Innerhalb dieser Zeit absolviert, jedes Team drei Sprints. Die ersten beiden Sprints sind Feature Sprints, die jeweils 3 Wochen Arbeitszeit umfassen. In diesen beiden Sprints werden neue Stories umgesetzt, die davor von den Product Ownern (PO) priorisiert worden sind. Das Team entscheidet jedoch für jeden Sprint neu, wie viele Stories realistisch umsetzbar sind und arbeitet zu jeder Story kleinere Tasks aus, die von den Entwicklern “geclaimed” und umgesetzt werden. Der letzte Sprint innerhalb der zwei Monate ist ein Release Sprint. Dieser erstreckt sich über die beiden verbleibenden Wochen. Zu dieser Zeit finden Verbundtests statt, bei denen die neu entwickelten Features im Zusammenspiel mit der Aax² getestet wird. 
+
+Die Aax ist die Software aus dem Hause Compax. Diese hält den congstar-spezifischen Produktkatalog. Darin werden alle Congstar Produkte abgebildet, wie zum Beispiel die Post- und Prepaidtarife, mit den dazugehörigen Buchungsoptionen. Die Aax² bietet dafür Soap-Schnittstellen an, um die Produktdaten im, von AOE entwickelten, “Backend” beziehen zu können. 
+
+Infolge des Release Sprints, besteht für die Entwickler ein Entwicklungs-Stop, so dass das neue Softwarepaket im Verbundtest getestet werden kann. Anstatt an neuen Features weiter zu arbeiten, wird die Zeit einerseits zum refactorn der Software und zum anderen zum update von Frameworks und anderer Software genutzt.
+
+Am Ende jedes Sprints findet zusammen mit den Stakeholdern das Review statt, bei dem das Entwickler-Team die Ergebnisse des aktuell endenden Sprints präsentieren. Dabei geht es hauptsächlich um die Präsentation der Stories, die innerhalb des Sprints erfolgreich umgesetzt werden konnten. Das Entwickler-Team berichtet in diesem Zusammenhang was während des Sprints gut gelaufen ist, welche technischen Probleme und Hindernisse sich ergaben und wie diese Probleme gelöst wurden. Die Stakeholder haben in diesem Zuge die Möglichkeit offene Fragen mit den Entwicklern direkt zu klären. Alle Beteiligten erhalten somit einen Überblick über den aktuellen Stand des Projekts, der sich im Produkt-Backlog wiederspiegelt. Das Review dient somit als Grundlage für das darauf folgende Sprint Planning.
+
+Im Sprint Planning wird im ersten Teil besprochen, welche Stories und wie viele Stories im Laufe des nächsten Sprints umgesetzt werden können. Während im zweiten Teil besprochen wird, wie diese Stories umgesetzt werden sollen.
+Dies geschieht im Zusammenspiel von Entwickler-Team, PO und Scrum Master. Gemeinsam priorisieren sie das Sprintziel. Dafür werden die Stories im Backlog priorisiert und für jede Story eine Aufwandsschätzung durch die Entwickler abgegeben. Parallel wird grob berechnet wie groß die “Velocity” des Teams ist, um einordnen zu können wie viele Stories innerhalb eines Sprints tatsächlich umgesetzt werden können. 
+
+Nachdem die Stories für den nächsten Sprint festgelegt sind, erarbeiten die Entwickler für jede Story kleinere Tasks, die beschreiben wie 
+
+
