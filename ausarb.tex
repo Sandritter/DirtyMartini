@@ -96,134 +96,217 @@ Projektphasen in engem Kontakt mit dem Kunden um.
 
 \section{Arbeitsumfeld} \label{sec:umfeld}
 
-In meinem Praktikum wurde ich vorwiegend als Backend-Entwickler im Congstar-Team eingesetzt. 
-Das Team bestand dabei aus 19 Entwicklern und acht Testern, die sich ihrerseits wieder in 3 kleinere Teams aufteilen.  
-Die Frontend bzw. Backend-Kompetenzen waren dabei gleichmäßig auf die 
+Während meines Praktikums arbeitete ich als PHP Backend-Entwickler im Congstar-Team.
+Das Team bestand dabei aus 20 Entwicklern und acht Testern, die sich ihrerseits wiederum in 4 Sub-Teams aufteilen.
+Die Frontend bzw. Backend-Kompetenzen waren dabei gleichmäßig auf die
 verschiedenen Teams verteilt, so dass jedes Team, für sich, in der Lage war sowohl Backend- als auch
  Frontend-Tasks zu übernehmen.
 
-Jedes Team arbeitet nach der agilen Softwareentwicklungsmethodik Scrum. 
-In täglichen Daily Meetings tauschen sich die Entwickler in ihren kleinen Teams
-über den aktuellen Entwicklungsstand aus, indem jeder Entwickler und Tester, dem
-Team erzählt, woran er gerade arbeitet und gegebenenfalls schildert welche
-Probleme bei der Umsetzung existieren.
-Zusätzlich finden zwei mal wöchentlich Weekly Meetings statt, 
-bei denen alle Entwickler und Tester zu einem übergreifenden Update des
-Entwicklungsstand zusammenkommen.
-In der großen Runde werden Themen besprochen, die das komplette Team betreffen. 
-Dazu gehört zum Beispiel, das Einführen und Verwenden neuer Technologien, das
-Entwickeln oder ändern der Software Architektur und generelle organisatorische
-Themen.
+Jedes Team arbeitet nach der agilen Softwareentwicklungsmethodik Scrum.
+In täglichen Daily Meetings tauschen sich die Entwickler in ihren kleinen Teams über den aktuellen Entwicklungsstand aus, indem jeder Entwickler und Tester, dem Team erzählt, woran er gerade arbeitet und gegebenenfalls schildert welche Probleme bei der Umsetzung existieren.
+Zusätzlich finden zwei mal wöchentlich “Weekly“ Meetings statt, bei denen alle Entwickler und Tester zu einem übergreifenden Update des Entwicklungsstand zusammenkommen.
+In der großen Runde werden Themen besprochen, die das komplette Team betreffen.
+Dazu gehört zum Beispiel, das Einführen und Verwenden neuer Technologien, das Entwickeln oder ändern der Software Architektur und generelle organisatorische Themen.
 
-Der zeitliche Rahmen gibt vor, dass dem Kunden alle zwei Monate ein neues Softwarepaket mit neuen Features ausgeliefert wird. 
-Innerhalb dieser Zeit absolviert, jedes Team drei Sprints. Die ersten beiden Sprints sind Feature Sprints, 
-die jeweils 3 Wochen Arbeitszeit umfassen. In diesen beiden Sprints werden neue Stories umgesetzt, 
+Während der täglichen Arbeit wird jedes Team von einem IT Analysten (ITA) von Congstar betreut. Dieser hat die Funktion des Scrummasters inne und moderiert beispielsweise die Dailys und Sprint Retrospektiven (dazu später mehr). Außerdem ist er die Schnittstelle zwischen dem Kunden und dem Team. Er ist Ansprechpartner für das Team bei Problemen oder fehlenden Informationen. Er kennt die Abläufe bei Congstar und weiß welcher Ansprechpartner für welches Anliegen der richtige ist.
+
+Der zeitliche Rahmen gibt vor, dass dem Kunden alle zwei Monate ein neues Softwarepaket mit neuen Features ausgeliefert wird.
+Innerhalb dieser Zeit absolviert, jedes Team drei Sprints. Die ersten beiden Sprints sind Feature Sprints,
+die jeweils 3 Wochen Arbeitszeit umfassen. In diesen beiden Sprints werden neue Stories umgesetzt,
 die davor von den Product Ownern (PO) priorisiert worden sind. Das Team
-entscheidet jedoch für jeden Sprint neu, wie viele Stories realistisch umsetzbar sind und arbeitet zu jeder Story kleinere Tasks aus, 
-die von den Entwicklern geclaimed und umgesetzt werden. Der letzte
-Sprint innerhalb der zwei Monate ist ein Release Sprint.
-Dieser erstreckt sich über die beiden verbleibenden Wochen. 
-Zu dieser Zeit finden Verbundtests statt, bei denen die neu entwickelten Features im Zusammenspiel mit der $Aax^{2}$ getestet wird. 
+entscheidet jedoch für jeden Sprint neu, wie viele Stories realistisch umsetzbar sind und arbeitet zu jeder Story kleinere Tasks aus,
+die von den Entwicklern geclaimed (Ein Entwicker / Tester “nimmt“ sich eine offene Aufgabe und bearbeite diese) und umgesetzt werden. Der letzte Sprint innerhalb der zwei Monate ist ein Release Sprint.
+Dieser erstreckt sich über die beiden verbleibenden Wochen.
+Zu dieser Zeit finden Verbundtests statt, bei denen die neu entwickelten Features im Zusammenspiel mit der AAX$^{2}$ getestet werden.
 
-Die $Aax^{2}$ ist die Software aus dem Hause Compax. Diese hält den congstar-spezifischen Produktkatalog.
+
+\par
+\begingroup
+\leftskip=1cm % ggf. verstellen
+\noindent Die AAX$^{2}$ ist eine Software aus dem Hause Compax (Compax Software Development GmbH ansässig in Wien, Österreich). Diese ist das Workflow-Management-System von Congstar und beinhaltet unteranderem den congstar-spezifischen Produktkatalog.
 Darin werden alle Congstar Produkte abgebildet, wie zum Beispiel die Post- und
-Prepaidtarife, mit den dazugehörigen Buchungsoptionen.
-Die $Aax^{2}$ bietet dafür Soap-Schnittstellen an, um die Produktdaten im, von
-AOE entwickelten, Backend beziehen zu können.
+Prepaidtarife, mit den dazugehörigen Buchungsoptionen oder die von Congstar angebotenen Endgeräte mit ihren Produktdetails  \& ihrer Verfügbarkeit.
+Die AAX$^{2}$ bietet zur Kommunikation mit Externen Anwendungen, Soap-Schnittstellen an. Über diese werden z.B.: die Produktdaten durch das von AOE System abgerufen.\cite{cx}
+\par
+\endgroup
 
-Infolge des Release Sprints, besteht für die Entwickler ein Entwicklungs-Stop, 
-so dass das neue Softwarepaket im Verbundtest getestet werden kann. Anstatt an neuen Features weiter zu arbeiten, 
-wird die Zeit einerseits zum refactorn der Software und zum anderen zum update von Frameworks und anderer Software genutzt.
+Im laufe des Release Sprints, besteht für die Entwickler ein Feature-Entwicklungs-Stop, damit das neue Softwarepaket im Verbundtest getestet werden kann.
+Anstatt an neuen Features zu arbeiten, wird die Zeit zum Beispiel zum Refactorn der Software, zum Updaten von Frameworks oder anderer Software genutzt. Alternativ wird auch neue Software oder Techniken ausprobiert und getestet oder vorhandene getestet und aufgeräumt.
+Somit alles, was während der beiden Featuresprints liegen geblieben ist oder für was keine Zeit war, wird erledigt. Falls im Verbundtest Fehler auftreten, werden diese bewertet und falls kritisch behoben.
 
-Am Ende jedes Sprints findet zusammen mit den Stakeholdern das Review statt, 
-bei dem das Entwickler-Team die Ergebnisse des aktuell endenden Sprints
-präsentieren.
-Dafür fahren die Entwickler-Teams nach jedem Feature-Sprint nach Köln zu
-Congstar, während sich die Beteiligten nach Ende des Release-Sprints bei Aoe in
-Wiesbaden treffen.
-Hauptsächlich geht es um die Präsentation der Stories, die innerhalb des
-Sprints erfolgreich umgesetzt werden konnten.
-Das Entwickler-Team berichtet in diesem Zusammenhang was während des Sprints gut
-gelaufen ist, welche technischen Probleme und Hindernisse sich ergeben haben und
-wie diese Probleme gelöst wurden. Die Stakeholder haben in diesem Zuge die
-Möglichkeit offene Fragen mit den Entwicklern direkt zu klären. Alle Beteiligten
-erhalten somit einen Überblick über den aktuellen Stand des Projekts, der sich
-im Produkt-Backlog widerspiegelt.
-Das Review dient somit als Grundlage für das darauf folgende Sprint Planning.
+Am Ende jedes Sprints findet zusammen mit den Stakeholdern (Congstar PO's und ITA's) der Sprintwechsel statt, bei dem das Entwickler-Team die Ergebnisse des aktuell endenden Sprints präsentieren und den nächsten Sprint vorbereitet.
+Dafür fahren die Entwickler-Teams nach jedem Feature-Sprint nach Köln zu Congstar und nach Ende des Release-Sprints treffen kommen die PO's und ITA's nach Wiesbaden und führen den Sprintwechsel bei AOE durch.
+Hauptsächlich geht es um die Präsentation der Stories, die innerhalb des letzten Sprints erfolgreich umgesetzt werden konnten.
+Das Entwickler-Team führt in diesem Zug auch eine Retrospektive des vergangenen Sprints durch und berichtet, was während des Sprints gut gelaufen ist, welche technischen Probleme und Hindernisse sich ergeben haben und wie diese Probleme gelöst wurden.
+Die Stakeholder haben in diesem Zuge die Möglichkeit offene Fragen mit den Entwicklern direkt zu klären. Alle Beteiligten erhalten somit einen Überblick über den aktuellen Stand des Projekts.
+Das Review dient als Grundlage für das darauf folgende Sprint Planning, als die Planung was im nächsten Sprint bearbeitet wird.
+Grundlage des Plannings ist das Produkt-Backlog, dort werden durch die PO's Stories gesammelt, welche künftig umgesetzt werden sollen.
+Diese Stories kommen durch neue Features aber auch Bugs in das Backlog und werden dann von den PO's  priorisiert.
 
-Im Sprint Planning wird im ersten Teil besprochen, welche Stories und wie viele Stories 
-im Laufe des nächsten Sprints umgesetzt werden können. Während im zweiten Teil
-besprochen wird, wie diese Stories umgesetzt werden sollen.
-Dies geschieht im Zusammenspiel von Entwickler-Team, PO und Scrum Master. Gemeinsam priorisieren sie das Sprintziel. 
-Dafür werden die Stories im Backlog priorisiert und für jede Story eine
-Aufwandsschätzung durch die Entwickler abgegeben.
-Parallel wird grob berechnet wie groß die Velocity des Teams ist, um
-einordnen zu können wie viele Stories innerhalb eines Sprints tatsächlich
-umgesetzt werden können. Nachdem die Stories für den nächsten Sprint
-festgelegt sind, definieren die Entwickler für jede Story kleinere Tasks.
+Während des Sprint Plannings werden im ersten Teil die Stories im Backlog gegroomt, also abgeschätzt wie aufwendig die Stories sind.
+Als Ergebnis des Groomings werden der Story Punkte zugewiesen, diese dienen dem Vergleich der Stories untereinander und der Abschätzung des gesamten Sprintumfangs. Eigentlich vergleicht man Punkte nicht mit einer Zeit Einheit, jedoch erhält jedes Teammitglied im Laufe des Projekts ein Gefühl dafür wie Aufwendig bestimmte Aufgaben sind und wie viel das Team im Laufe einer Arbeitswoche umsetzen kann. Anfangs waren Beispielsweise meine geschätzten Punkte sehr stark abweichend von denen meiner Teammitglieder, mit der Zeit habe ich aber relativ schnell ein Gefühl dafür bekommen.
+Im zweiten Teil des Plannings werden die nun gegroomten Stories im Backlog durch die PO's nochmals mit den neuen Informationen bezüglich des Aufwands priorisiert und dann wird durch das Entwicklerteam festgelegt wird wie viele der besprochenen Stories umgesetzt werden können. Das hier gesetzte Sprintziel sollte möglich sein und die Entwickler versichern, mit ihrer Aussage, dass es auch geschafft wird.
 
-Backlog, Stories und Tasks werden im Projekt-Management-Tool
-zugänglich gemacht. Aktuell wird als solches Tool Kunagi verwendet. Künftig
-soll Kunagi jedoch durch JIRA ersetzt werden.
+Falls Stories schneller umgesetzt werden als geplant, kann immer eine Story aus dem Backlog nachgezogen werden, jedoch sollte dies das Sprintziel nicht beeinflussen. Falls ungeplante Ereignisse oder Abhängigkeiten eintreten, welche eine Story verzögern, kann diese überkippen in den nächsten Sprint, jedoch sollte dies möglichst vermieden werden.
+
+Nachdem die Stories für den nächsten Sprint festgelegt sind, definieren die Entwickler für jede Story kleinere Aufgaben (Tasks) und schätzen diese in Minuten, Stunden und Tagen ab. Dabei ist es wichtig, die Aufgaben so klein wie Möglich und so groß wie nötig zu wählen.
+
+In unserem Fall werden Backlog, Stories und Tasks im Projekt-
+Management-Tool Jira verwaltet.
 
 Im Laufe des Sprints werden die einzelnen Tasks von den Entwicklern abgearbeitet.
-Diese müssen dabei vermerken, wie viel Zeit sie für den Task geburned, sprich benötigt haben. Aus der
-geschätzen und der letztendlich benötigten Zeit lässt sich ein Burndown-Chart
-ermitteln, das den aktuellen Fortschritt des Sprints widerspiegelt.
+Zum beginn einer Aufgabe vermerkt der Entwickler im Jira, dass dieser nun daran arbeitet, indem er sich den Task claimed, also diesen auf “in Arbeit“ zieht und Jira dann automatisch den Benutzer an den Taks hängt.
+Während der Arbeit wird an dem Tasks vermerkt, wie viel Zeit für den Task verbraucht wurde (geburned). Aus der
+geschätzten und der letztendlich benötigten Zeit lässt sich ein Burndown-Chart ermitteln, das den aktuellen Fortschritt des Sprints widerspiegelt.
 
-Sind alle Tasks einer Story umgesetzt steht die Abnahme dieser Story an. Diese erfolgt 
-durch einen Entwickler der an der Umsetzung der Story beteiligt war und durch den Product Owner. 
-Der Entwickler präsentiert dem PO die Features, die durch die Story umgesetzt
-werden sollten.
-Erfüllt das Umgesetzte alle Akzeptanz-Kriterien, die für die Story definiert
-wurden, kann die Story durch den PO abgenommen werden und ist fertig.
+Sind alle Tasks einer Story umgesetzt steht die Abnahme dieser Story an. Diese erfolgt durch einen Entwickler der an der Umsetzung der Story beteiligt war und durch den Product Owner (PO).
+Der Entwickler präsentiert dem PO die Features, die durch die Story umgesetzt werden sollten.
+Erfüllt das Umgesetzte alle Akzeptanz-Kriterien, die für die Story definiert wurden, kann die Story durch den PO abgenommen werden und ist fertig.
 
 \section{Projektbeschreibung} \label{sec:projekt}
 
+Mein Team ist zuständig für die Congstar GmbH.
 
-Entwickelt wird der Webshop der Firma Congstar. Congstar ist als Schwestergesellschaft der Telekom, 
-deutschlandweiter Anbieter für Mobilfunk- und DSL-Produkte. 
+Congstar ist eine Tochterfirma der Deutschen Telekom AG und deutschlandweiter Anbieter für Mobilfunk- und DSL-Produkte.
+2008 hat Congstar ein ambitioniertes Ziel: Die komplette IT von congstar sollte innerhalb eines Jahres komplett ersetzt werden.
 
-Dem Kunden soll zum einen abhängig von seinem Endgerät alle relevanten
-Informationen zum Congstar Portfolio und Service dargestellt bekommen und
-unabhängig von seinem Endgerät, neue Verträge abschließen und bestehende
-Verträge verwalten können.
+AOE hat dabei für Congstar ein komplettes Telco E-Commerce Framework auf Basis des Open Source Content Management Systems (CMS) TYPO3 entwickelt und betreut es seit dem mit aktuell 3 Teams und somit ca. 15 Mitarbeitern allein für den Webbereich.
 
-Für die Redakteure von Congstar sollen spezielle Informationen des Webshops
-redaktionell und zentral pflegbar sein, um inhaltliche Inkonsistenzen und redundante Informationen zu vermeiden. 
+Congstar vermarktet all seine Produkte vorrangig über das Internet, somit ist das Web nahezu der Kern von Congstar. AOE übernimmt dabei die gesamte Web-Entwicklung bestehend aus: Content Management System, Produktkonfiguration und Bestellprozessen, Kampagnen-Management-System, Kundenservice, Vertriebspartnerportal und White Label-Vertrieb.
+
+\begin{center}
+\textbf{Webseiten und Portale}
+\end{center}
+
+\begin{figure}[H]
+\includegraphics[width=0.7\textwidth]{images/Sites/Congstar_Main.png}
+\centering
+\caption{Die Congstar Hauptwebseite \cite{cmain}}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[width=0.7\textwidth]{images/Sites/Congstar_Mobil_CSC.png}
+\centering
+\caption{Das Congstar Mobil Kundenportal (CSC) \cite{ccsc}}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[width=0.7\textwidth]{images/Sites/Congstar_CPP.png}
+\centering
+\caption{Das Congstar Vertriebsportal (CPP) \cite{ccpp}}
+\end{figure}
+
+\pagebreak
+Congstar Breitband:
+
+\begin{figure}[H]
+\includegraphics[width=0.7\textwidth]{images/Sites/Congstar_Breitband.png}
+\centering
+\caption{Die Congstar Breitband Hauptseite \cite{cb}}
+\label{figure1}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[width=0.7\textwidth]{images/Sites/Congstar_Breitband_CSC.png}
+\centering
+\caption{Das Congstar Breitband Kundenportal (CSC) \cite{cbcsc}}
+\end{figure}
+
+\pagebreak
+White Label-Vertrieb:
+
+
+\begin{figure}[H]
+\includegraphics[width=0.7\textwidth]{images/Sites/White_Label/Ja_Mobil.png}
+\centering
+\caption{White Label - Die Ja! Mobil Webseite \cite{ja}}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[width=0.7\textwidth]{images/Sites/White_Label/Ja_Mobil_CSC.png}
+\centering
+\caption{White Label - Das Ja! Mobil Kundenportal (CSC) \cite{jacsc}}
+\end{figure}
+
+
+\begin{figure}[H]
+\includegraphics[width=0.7\textwidth]{images/Sites/White_Label/Penny_Mobil.png}
+\centering
+\caption{White Label - Die Penny Mobil Webseite \cite{penny}}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[width=0.7\textwidth]{images/Sites/White_Label/Penny_Mobil_CSC.png}
+\centering
+\caption{White Label - Das Penny Mobil Kundenportal (CSC) \cite{pencsc}}
+\end{figure}
+
+\pagebreak
+
+\begin{center}
+\textbf{Umsetzung}
+\end{center}
+
+Die Web-Plattform ist in eine Gesamtarchitektur eingebettet, zu der auch ein zentrales Bestellmanagement- und Workflowsystem sowie ein Billingsystem gehört. Für das Thema Workflow ist die österreichische Firma Compax zuständig, um die Billing-Abwicklung kümmerte sich die Firma mr. nexnet.
+
+Eines der Hauptziele war und ist die redundanzfreie Datenpflege und – auf die agilen Geschäftsanforderungen zugeschnittene – Konfigurationsmöglichkeiten. Dies wurde durch vielfälltige Konfigurationsmöglichkeiten in TYPO3 umgesetzt.
+
+So können congstar-Kampagnen und Landing Pages von Marketing- und Sales-Mitarbeitern selbst direkt aus der Plattform heraus erstellt und verwaltet werden. Da durch gewinnt congstar sehr viel Zeit: Vorher dauerte es rund sechs Monate, bis ein Produkt auf dem Markt war. Heute konnte die so genannte “Time-to-Market“ auf wenige Tage verkürzt werden. In nur fünf Minuten ist eine neue Kampagne konfiguriert und online gestellt.
+
+Ein weiteres Hauptziel des Projekts des Online-Vertriebs ist die Content-Personalisierung. TYPO3 ermöglicht Redakteuren, Content zielgruppenspezifisch anzulegen: So verändern sich z.B. Preise oder Angebote, je nach Einsprung-Link, über welchen die User auf die jeweilige Seite gekommen sind. Selbst auf das individuelle Benutzer-Verhalten, ob Bestandskunde oder Interessent, reagiert das System entsprechend.
+
+Ein weiterer Fokus liegt auf dem Kundenservice: Die Vertragsstrukturen bei congstar sind flexibel und können vom Kunden modular zusammengestellt und verändert werden. Dies muss ebenfalls online geschehen und somit Kosten für congstar reduzieren. Über das CMS lässt sich das so genannte Customer Self Care (CSC) schnell und einfach durch Redakteure anpassen und pflegen.
+
+Die gesamte Lösung “E-Commerce-Framework for Telcos“ oder kurz “EFT“ wurde von AOE speziell für den Einsatz im Bereich Telekommunikation entwickelt und bei congstar implementiert.
+
+Heute wird das Gesamtsystem von ca. fünf Millionen Besucher am Tag und Tausend Bestandskunden besucht und genutzt.
 
 \section{Deployment Pipeline} \label{sec:pipeline}
 
-Im folgenden wird der Ablauf der Deployment-Pipeline erläutert. 
+Im folgenden wird der Ablauf der Deployment-Pipeline erläutert.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \includegraphics[width=\textwidth]{images/DeploymentPipeline.pdf}
+\caption{Der Ablauf der Congstar Deployment-Pipeline }
 \centering
 \end{figure}
- 
-Der grobe Ablauf des Deployments sieht so aus, dass ein aktuelles Backup aller System, auf denen relevante Daten gepflegt werden müssen, erstellt und in das Backupstorage geschrieben werden. Dabei werden die Systeme vor einem Deployment gesperrt um zu verhindern, dass die Daten nach dem Backup noch verändert werden. 
 
+Der grobe Ablauf des Deployments sieht so aus, dass ein aktuelles Backup aller System, auf denen relevante Daten gepflegt werden müssen, erstellt und in den Backupstorage geschrieben wird. Dabei werden die Systeme vor einem Deployment gesperrt um zu verhindern, dass die Daten nach dem Backup noch verändert werden.
 
-Die verschiedenen Systeme verteilen sich auf zwei Hosts:
-
+Die verschiedenen Systeme unterteilen sich in zwei Hauptkomponenten:
 \begin{itemize}
   \item Integration Congstar
+  \begin{itemize}
+    \item wird von AOE gehostet
+    \item beinhaltet die internen Deploy-Systeme (VM Ware Server)
+    \item Voller Zugriff / volle Verantwortung bei AOE
+    \item AOE Teil der Deployment Pipeline
+  \end{itemize}
   \item MMS (T-Systems Multimedia Solution)
+  \begin{itemize}
+    \item wird von der Telekom Tochter MMS gehostet
+    \item beinhaltet die externen Deploy-Systeme
+    \item (Server Cluster mit verschiedenen Virtuellen Servern)
+    \item Kein Einfluss / Zugriff durch AOE
+    \item Congstar / MMS Teil der Deployment Pipeline
+  \end{itemize}
 \end{itemize}
 
-Wird ein Softwarepaket komplett neu gebaut, wird zum einen der Quellcode aus den getagten Git-Repositories gezogen und zum anderen die Datenbank und andere Bewegungsdateien aus dem Backupstorage (jeweils von den relevanten Systemen) zusammengeführt. 
+Wird ein Softwarepaket komplett neu gebaut, wird zum einen der Quellcode aus den getagten Git-Repositories gezogen und zum anderen die Datenbank und andere Bewegungsdateien aus dem Backupstorage (jeweils von den relevanten Systemen) zusammengeführt.
 
-Die Verheiratung findet mit der Deploymentsoftware T3deploy statt. Mit Hilfe der Konfigurationsdatei project.yml baut die T3Deploy Software ein fertiges, installierbares Softwarepaket. Die Konfigurationsdatei 
-enthält dabei alle Infos über Extensions, Libraries und Datenbanken, die zum Bau eines Pakets notwendig sind.
+Die Verheiratung findet mit der Deploymentsoftware T3Deploy statt. Mit Hilfe der Konfigurationsdatei project.yml baut die T3Deploy Software ein fertiges, installierbares Softwarepaket. Die Konfigurationsdatei enthält dabei alle Infomationen über Extensions, Libraries und Datenbanken, die zum Bau eines Pakets notwendig sind.
 
-War der Bau eines Pakets erfolgreich, wird dieses zur erst auf den aoe-internen Umgebungen des Integration Congstar installiert und durchläuft mehrere Teststufen.
+War der Bau eines Pakets erfolgreich, wird dieses zur erst auf den AOE-internen Umgebungen des Integration Congstar installiert und durchläuft mehrere Teststufen.
 
-Auf der Latest Umgebung werden alle automatisierten Tests durchgeführt. Dazu gehören Unit-Tests, Smoke Tests, sämtliche Code Metriken und Static Cache Tests. Laufen dort alle Tests durch kann das Paket auf der Deploy Umgebung installiert werden. Dort haben die Redakteure von Congstar die Möglichkeit redaktionelle Änderungen vorzunehmen. Zusätzlich werden auf dieser Umgebung neue Nutzer für das Typo3-Backend angelegt, die über das Backupstorage in jedem gebauten Paket zugänglich gemacht werden. Die letzte Umgebung des Integration Congstar bildet die Test Umgebung. Dort laufen hauptsächlich Java Sellenium Tests.
+Auf der Latest Umgebung werden alle automatisierten Tests durchgeführt. Dazu gehören Unit-Tests, Smoke Tests, sämtliche Code Metriken und Static Cache Tests. Laufen dort alle Tests durch kann das Paket auf der Deploy Umgebung installiert werden. Dort haben die Redakteure von Congstar die Möglichkeit redaktionelle Änderungen vorzunehmen. Zusätzlich werden auf dieser Umgebung neue Nutzer für das Typo3-Backend angelegt, die über das Backupstorage in jedem gebauten Paket zugänglich gemacht werden. Die letzte Umgebung des Integration Congstar bildet die Test Umgebung. Dort laufen hauptsächlich die Java Selenium Tests. Dies sind Tests bei welchen die Seite automatisiert aufgerufen wird und “durchgeklickt“ wird und somit geprüft ob alle Workflows klickbar sind und funktionieren.
 
-Sind alle drei aoe-internen Teststufen durchlaufen wird einmal täglich nachts ein fertiges Paket an die MMS geliefert und dort auf der TuADev (Test und Abnahme) Umgebung installiert. Auf der TuADev Umgebung werden Abnahmetests seitens Congstar Testern durchgeführt, die hauptsächlich Sellenium Tests umfassen.
+Sind alle drei AOE-internen Teststufen durchlaufen wird einmal täglich nachts ein fertiges Paket an die MMS geliefert und dort auf der TuADev (Test und Abnahme) Umgebung installiert. Auf der TuADev Umgebung werden Abnahmetests seitens der Congstar Testern durchgeführt, die ebenfalls hauptsächlich Selenium Tests umfassen. Die TuADev Umgebung Umgebung ist außerdem ein Content Master. Das heißt, dass die Congstar Redakteure auf diesem System neuen Content einpflegen können, wie zum Beispielsweise Seiten für neue Features anlegen oder den Inhalt der Seiten anpassen. Diese Option ist nötig, da die neuen Features zu dem Zeitpunkt noch nicht auf der Wirk Umgebung (Live System) enthalten sind und somit nur hier angepasst werden können. Ziel der Funktion ist es, dass beim Release direkt eine neue Funktion mit dem passenden redaktionell gepflegen Inhalt online geht.
 
-Sobald das Paket alle Teststufen durchlaufen hat, wird es letztendlich auf der Wirk-Umgebung installiert. 
-Die Wirk Umgebung ist das Live-System, von der aus die Webseite für alle Besucher erreichbar ist.
+Zu jedem Release wird zuerst die TuAPre Umgebung deployed, da diese dem Wirk System hinsichtlich der Konfiguration am nähesten ist.
+Dies wir am Tag des Release durchgeführt um erste Probleme oder Fehler auszuschließen.
+
+Das Wirk Deployment wird über Nacht durchgeführt um möglich wenig den laufenden Betrieb zu stören. Im Wirksystem gibt es sechs Webserver, welche hinter einer Lastverteilung arbeiten. Auf der Wirk Umgebung wird ein A/B Deployment durchgeführt, also die hälfte der Webserver wird offline genommen und installiert, sobald diese fertig sind, gehen diese wieder online und die andere hälfte wird offline genommen zum Deployment. Sobald diese dann auch die neue Software enthalten gehen sie wieder online.
+Durch diese Technik ist jederzeit eine Erreichbarkeit der WebApplikation gesichert.
 
 
 \section{Task 01: Extension zur Reisekostenkalkulation} \label{sec:pipeline}
@@ -425,5 +508,9 @@ bei den Ergebnissen des Build-Jobs angezeigt wird.
 \section{Behobene Issues} \label{sec:issues}
 
 \newpage
+
+\bibliographystyle{plain}
+\bibliography{online}
+
 
 \end{document}
