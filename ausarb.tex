@@ -10,9 +10,28 @@
 \usepackage{graphicx} % wir wollen Bilder einf��gen
 
 \usepackage{listings} % Sch��ne Quellcode-Listings
-\lstset{basicstyle=\sffamily, columns=[l]flexible, mathescape=true, 
-  showstringspaces=false, numbers=left, numberstyle=\tiny}
-\lstset{language=python} 
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Php,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
 % und eine eigene Umgebung f��r Listings
 \usepackage{float}
 \newfloat{listing}{htbp}{scl}[section]
@@ -105,7 +124,7 @@ Sprint innerhalb der zwei Monate ist ein Release Sprint.
 Dieser erstreckt sich über die beiden verbleibenden Wochen. 
 Zu dieser Zeit finden Verbundtests statt, bei denen die neu entwickelten Features im Zusammenspiel mit der $Aax^{2}$ getestet wird. 
 
-Die $Aax^{2}$ ist die Software aus dem Hause Compax. Diese hält dencongstar-spezifischen Produktkatalog.
+Die $Aax^{2}$ ist die Software aus dem Hause Compax. Diese hält den congstar-spezifischen Produktkatalog.
 Darin werden alle Congstar Produkte abgebildet, wie zum Beispiel die Post- und
 Prepaidtarife, mit den dazugehörigen Buchungsoptionen.
 Die $Aax^{2}$ bietet dafür Soap-Schnittstellen an, um die Produktdaten im, von
@@ -160,6 +179,7 @@ wurden, kann die Story durch den PO abgenommen werden und ist fertig.
 
 \section{Projektbeschreibung} \label{sec:projekt}
 
+
 Entwickelt wird der Webshop der Firma Congstar. Congstar ist als Schwestergesellschaft der Telekom, 
 deutschlandweiter Anbieter für Mobilfunk- und DSL-Produkte. 
 
@@ -174,6 +194,7 @@ redaktionell und zentral pflegbar sein, um inhaltliche Inkonsistenzen und redund
 \section{Deployment Pipeline} \label{sec:pipeline}
 
 Im folgenden wird der Ablauf der Deployment-Pipeline erläutert. 
+
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{images/DeploymentPipeline.pdf}
 \centering
@@ -200,43 +221,182 @@ Auf der Latest Umgebung werden alle automatisierten Tests durchgeführt. Dazu ge
 
 Sind alle drei aoe-internen Teststufen durchlaufen wird einmal täglich nachts ein fertiges Paket an die MMS geliefert und dort auf der TuADev (Test und Abnahme) Umgebung installiert. Auf der TuADev Umgebung werden Abnahmetests seitens Congstar Testern durchgeführt, die hauptsächlich Sellenium Tests umfassen.
 
-//TODO über die TuAPre und Wirk Umgebung schreiben. 
+Sobald das Paket alle Teststufen durchlaufen hat, wird es letztendlich auf der Wirk-Umgebung installiert. 
+Die Wirk Umgebung ist das Live-System, von der aus die Webseite für alle Besucher erreichbar ist.
 
 
-\section{Feature 01: Extension zur Reisekostenkalkulation} \label{sec:pipeline}
+\section{Task 01: Extension zur Reisekostenkalkulation} \label{sec:pipeline}
 
-Da viele Softwaremodule des Congstar Webshops also Typo3 Extensions umgesetzt sind, habe ich im Zuge 
+$TODO$
+Da viele Softwaremodule des Congstar Webshops also Typo3 Extension umgesetzt sind, habe ich im Zuge 
 meiner Einarbeitung eine eigene Extension entwickelt, die als Reiseplanungstool eingesetzt werden kann.
-Ziel der Extension ist es, Personen eine grobe Kalkulation der Kosten offenzulegen, über Reiseziele, die sie gerne bereisen würden, von denen sie aber nicht wissen, welche Kosten auf sie zukommen. 
+Ziel der Extension ist es, Personen eine grobe Kalkulation der Kosten offenzulegen, über Reiseziele, 
+die sie gerne bereisen würden, von denen sie aber nicht wissen, welche Kosten auf sie zukommen. 
+Informationen über Reiseziele und mögliche Kosten sollen über entsprechende APIs angesprochen werden und wurden bei der Umsetzung dieser Extension vernachlässigt.
+Der Schwerpunkt der Umsetzung lag in der Erstellung und Konfiguration der Extension, sodass Sie über das
+Typo3 Backend eingebunden werden kann und mit zugewiesener URL im Browser aufrufbar ist.
+
+\section{Task 02: Rollen-basierte Zuordnung der Bestandskundenverwaltung (CD 6929)} \label{sec:t02}
+
+Ziel war es, dass die Bestandskundenfunktionalität rollen-basiert zugeordnet werden kann, 
+damit sie nur den Sales-Partnern zur Verfügung steht, die die Funktion auch nutzen dürfen.
+
+Dafür wurde im Typo3 Backend eine neue Gruppe für die Bestandskunden-Buchung angelegt.
+Redakteure können dadurch die Zuordnung der Rechte im Typo3 für verschiedene Partner freischalten
+oder zusätzlich zuweisen.
+
+Zusätzlich wurde die Funktionalität des Sales-Partner-Objektes erweitert, sodass dieser Auskunft geben kann, 
+welche Gruppe er inne hat. Dadurch wird für den jeweiligen Sales-Partner im Congstar Vertriebsportal,
+nur die Funktionalität zur Verfügung gestellt, die ihm zugeordnet ist.
+
+\section{Task 03: Madeira POS Kartenaktivierung (CD 7227)}
+
+$TODO$
+- Flexform erweitern
+- Template erweitern
+
+\section{Task 04: Webservice implementieren (CD 7126)}
+
+$TODO$
+Infos aus dem JIRA extrahieren
+
+\section{Task 04: Kunden-Authentifizierung durchführen}
+
+$TODO$
+Infos aus dem JIRA extrahieren
+mTan-Verfahren
+
+\section{Task 05: Konfiguration eines Jenkins Job}
+
+\subsection{Schritt 1: build.xml mit Ant ohne Jenkins erstellen}
+Zunächst einmal war es Ziel zu verstehen, wie eine build.xml aufgebaut ist
+und aus welchen Befehlen sie besteht, um im Nachgang nachvollziehen zu können, auf welchen
+Grundlagen die Einstellungen im Jenkins aufbauen.
+
+$TODO$ einfach eine build.xml einer Extension öffnen und die wichtigsten Schritte beschreiben
+
+\subsection{Schritt 2: Build-Job mit Jenkins konfigurieren}
+
+$TODO$ Einrichtung eines Build-Jobs der für den Bau und das Testen
+der Extension $congstar_eft_rest_api$ zuständig ist.
+- Dabei muss konfiguriert werden unter welchen Repository, die Extension zu finden ist.
+- PHPMD
+
+\section{Task 06: Erstellung von Databuildern}
+
+$TODO$ Im Zuge dieses Tasks wurden DataBuilder erzeugt, die das Generieren von Mock-Objekten in Unit-Tests erleichtert.
+
+$TODO$ Beispiel-Code 
+$TODO$ Erläuterung wieso DataBuilder in dem Fall sinnvoll sind
+
+\section{Task 07: Durchstich OptionsGroups}
+
+$TODO$ Beschreibung als $eft_core$ extrahieren
+
+\section{Task 08: Durchstich ContractDuration}
+
+$TODO$ Beschreibung aus $eft_core$ extrahieren
+CR 5539 - Madeira - Implementierung REST Endpoint "getOptions" (BE) (13P)
+Description
+
+
+Als Entwickler möchte ich den REST Endpoint "getOptions" implementieren.
+
+Akzeptanzkriterien:
+
+Controller in der neuen Extension
+Abstimmung Datenstruktur (auch mit Hinblick auf Optionswechsel)
+Optionsanreicherungen sind erweitert
+"Schwestern-Option" (Referenz auf andere Option)
+"ist-Turbo-Option" (Flag)
+Hochreichen der Optionen in ein für das Frontend fertiges Format zur Darstellung
+Folgende Elemente des Mixers sollen redaktionell pflegbar sein (siehe sto191):
+Texte in "mehr Details" Layer
+NEU: Beschreibung zum Datenturbo inkl. Preis-Info (ausgewählt und nicht ausgewählt)
+"Mein Mix"-Beschreibung zum Datenschieber auf "0"
+"Mein Mix"-Beschreibungen zu Telefonie und SMS auf "0"
+Abstimmung mit AAX (Null-Option!?) (PO)
+API Dokumentation erstellt
+Profiling erstellt
+optional
+* Performance getestet (Abstimmung mit Rene)
+
+\section{Task 09: Property hasMixableOptions an Produkt ergänzen}
+
+$TODO$ nachschauen ob Konversion bei diesem Task mit inbegriffen war
+
+\section{Task 10: Implementierung von CodeSniffern zur Überprüfung von Namespace-Deklaration, File Doc Comment und Use-Statements von PHP Dateien}
+
+Die Aufgabe dieses Tasks, war die Implementierung von CodeSniffern zur Überprüfung
+der eigens definierten Code-Style Richtlinien des Congstar Web-Teams. Die verschiedenen CodeSniffer 
+überprüfen dabei, die Existenz und Reihenfolge von: Namespace-Deklaration, 
+File Doc Comment und Use-Statements in PHP-Dateien. Wie im Code Block unten zu sehen, sollen 
+folgende Richtlinien überprüft werden:
+
+\begin{enumerate}
+  \item Namespace-Deklaration ist vorhanden
+  \item Namespace-Deklaration befindet sich direkt unterhalb des PHP-Opening-Tags \label{item1}
+  \item nach der Namespace-Deklaration folgt eine Leerzeile \label{item2}
+  \item nach \ref{item1}. und \ref{item2}. folgt das File Doc Comment
+  \item das File Doc Comment beinhaltet die von Aoe vorgegebene Copyright Notice \label{item4}
+  \item nach dem File Doc Comment folgt eine Leerzeile \label{item5}
+  \item nach \ref{item4}. und \ref{item5} können Use-Statements folgen
+  \item wenn Use-Statements vorhanden sind, müssen diese unterhalb des File Doc Comment stehen
+  \item nach dem File Doc Comment oder nach den optionalen Use-Statements muss ein Leerzeile folgen
+\end{enumerate}
+
+\begin{lstlisting} 
+<?php
+namespace Aoe\Checkout\Domain\Model;
+ 
+/***************************************************************
+ *  Copyright notice
+ *
+ *  (c) 2015 AOE GmbH <dev@aoe.com>
+ *
+ *  All rights reserved
+ ***************************************************************/
+ 
+use Aoe\Checkout\Domain\Model\Customer\Address;
+use Aoe\Checkout\Domain\Model\Customer\LoginData;
+use Aoe\Checkout\Domain\Model\Customer\PersonalData;
+use Aoe\Checkout\Domain\Model\Payment;
+ 
+class Customer
+...
+\end{lstlisting} \label{codesniffer}
+
+Die Umsetzung der CodeSniffer beruht auf Grundlage des PHP CodeSniffer Scripts von Squizlab 
+\cite{SquizlabPHPCodeSniffer}. Dieses Script scannt zum Beispiel eine PHP-Datei und liefert
+eine Liste aus Tokens, die den jeweiligen Inhalt der Datei beschreibt. Jedes Token beschreibt dabei,
+beispielsweise einen PHP-Tag, Leerzeichen, Strings und vieles mehr. Aufbauend darauf
+wurden die CodeSniffer implementiert. Jeweils für die Namespace-Deklaration, File Doc Comment
+und Use-Statements wurde ein eigener CodeSniffer in Form einer PHP-Klasse implementiert.
+Jede CodeSniffer-Klasse implementiert dabei das PHP CodeSniffer Sniff Interface, dass vorschreibt
+die Methoden register() und process() zu implementieren. Die register Methode wird dazu 
+verwendet zu definieren, auf welchen Tokens der Sniff losgelassen werden soll.
+Die process Methode wird anschließend jedes mal aufgerufen, wenn das Script auf einen registrierten
+Token stößt. Ausgehend von der process Methode wurde die eigentliche Logik und Überprüfungen
+der Code-Style Richtlinien implementiert. Falls ein Verstoß gegen die Richtlinien 
+aufgetreten ist wird ein Fehler oder Warnung geschmissen.
+Diese Information bei einem auftretenden Fehler oder einer Warnung, wird in eine Output-Datei
+geschrieben.
+
+Nach der Erstellung der CodeSniffer mussten diese noch ins Projekt integriert werden.
+Für jeden Extension beziehungsweise Komponente, für die die CodeSniffer eingesetzt werden sollen,
+wurde der jeweilige Build-Job erweitert. Dafür musste die Einstellung des Jenkins Job der jeweiligen 
+Komponente erweitert werden. Bei den Einstellungen für die verschiedenen Code Checkstyle Analysen,
+wurde das Ausführen des PHP CodeSniffer Scripts phpcs unter Angabe des Pfads zu den entsprechenden zu
+prüfenden Dateien angegeben. Zusätzlich wurde die Einstellung getroffen, dass das Ergebnis der CodeSniffer
+in die Ausgabedatei checkstyle.xml hinzuzufügen. Dadurch ist es möglich innerhalb des Jenkins Job
+visualisiert zu bekommen, wo eine Warnung oder Fehler aufgetreten ist.
+
+\section{Task 11: Implementierung eines CodeSniffers zu Überprüfung von Code Coverage Ignore Annotationen}
 
 
 
-
+\section{Behobene Issues} \label{sec:issues}
 
 \newpage
-
-% Listen, wenn ��berhaupt!, bitte ans Ende und nicht an den Anfang
-%\listoffigures % Liste der Abbildungen 
-%\listoftables % Liste der Tabellen
-
-\newpage
-
-% Als letztes noch das Literaturverzeichnis
-\bibliographystyle{plain}
-% so w��re es ganz einfach!
-%\bibliography{ausarb,online}
-% dann mit "bibtex ausarb" bibtexen und das Literaturverzeichnis ist da
-
-% z.B. mit bibtopic kann man die Quellen sauber trennen
-\begin{btSect}{ausarb}
-\section*{Literaturverzeichnis}
-\btPrintCited
-\end{btSect}
-\begin{btSect}{online}
-\section*{Online-Quellen}
-\btPrintCited
-\end{btSect}
-% dann mit "bibtex ausarb1" und "bibtex ausarb2" arbeiten
-% Wir verwenden ausarb<i> weil die Dokumenten-Datei ausarb.tex ist
 
 \end{document}
