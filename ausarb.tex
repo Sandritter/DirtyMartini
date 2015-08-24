@@ -2,6 +2,7 @@
 % wie man sich schon denkt leitet % einen Kommentar bis Zeilenende ein
 
 \usepackage[german]{babel} % deutsch, deutsche Rechtschreibung
+\usepackage[english]{}
 \usepackage[utf8]{inputenc} % Unicode Text 
 \usepackage[T1]{fontenc} % Umlaute und deutsches Trennen
 \usepackage{mathptmx} % Times New Roman, gewohnter Font
@@ -318,8 +319,6 @@ NEU: Beschreibung zum Datenturbo inkl. Preis-Info (ausgewählt und nicht ausgew�
 Abstimmung mit AAX (Null-Option!?) (PO)
 API Dokumentation erstellt
 Profiling erstellt
-optional
-* Performance getestet (Abstimmung mit Rene)
 
 \section{Task 09: Property hasMixableOptions an Produkt ergänzen}
 
@@ -393,7 +392,35 @@ visualisiert zu bekommen, wo eine Warnung oder Fehler aufgetreten ist.
 
 \section{Task 11: Implementierung eines CodeSniffers zu Überprüfung von Code Coverage Ignore Annotationen}
 
+Umsetzung eines weiteren CodeSniffers der den PHP Code auf Code Coverage Ignore Annotations prüfen soll.
+Mit Hilfe der Code Coverage Ignore Annotations ist möglich gezielt Codezeilen, Methoden oder gar ganze 
+Klassen, von den PHP Metriken unbeachtet zu lassen, sodass die Code Coverage nicht sinkt, falls für
+diesen Code keine Unit Tests existieren. 
+Es kann auch manchmal der Fall sein, dass solche Annotations Sinn machen, wenn Code beispielsweise
+nicht testbar ist. Es war eine Teamentscheidung zu sagen, dass sie die Code Coverage für Unit Tests transparent
+halten und somit auf Code Coverage Ignore Annotations verzichten möchte.
 
+Folgende Codebeispiele zeigen die Annotations auf die geprüft werden soll.
+
+\begin{lstlisting} 
+/**
+ * @codeCoverageIgnore
+ */
+\end{lstlisting} \label{codeCoverageIgnore}
+
+\begin{lstlisting} 
+// @codeCoverageIgnoreStart
+... hier steht ein bisschen Code
+// "codeCoverageIgnoreEnd
+\end{lstlisting} \label{codeCoverageIgnore2}
+
+Sobald eine solche Annotation im Code entdeckt wurde, wird eine Warnung geworfen, die später
+bei den Ergebnissen des Build-Jobs angezeigt wird.
+
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{images/snifferResult.png}
+\centering
+\end{figure}
 
 \section{Behobene Issues} \label{sec:issues}
 
