@@ -19,8 +19,6 @@
 
 \lstset{frame=tb,
   language=Php,
-  aboveskip=3mm,
-  belowskip=3mm,
   showstringspaces=false,
   columns=flexible,
   basicstyle={\small\ttfamily},
@@ -243,9 +241,7 @@ White Label-Vertrieb:
 
 \pagebreak
 
-\begin{center}
-\textbf{Umsetzung}
-\end{center}
+\subsection{Umsetzung}
 
 Die Web-Plattform ist in eine Gesamtarchitektur eingebettet, zu der auch ein zentrales Bestellmanagement- und Workflowsystem sowie ein Billingsystem gehört. Für das Thema Workflow ist die österreichische Firma Compax zuständig, um die Billing-Abwicklung kümmerte sich die Firma mr. nexnet.
 
@@ -260,6 +256,9 @@ Ein weiterer Fokus liegt auf dem Kundenservice: Die Vertragsstrukturen bei congs
 Die gesamte Lösung “E-Commerce-Framework for Telcos“ oder kurz “EFT“ wurde von AOE speziell für den Einsatz im Bereich Telekommunikation entwickelt und bei congstar implementiert.
 
 Heute wird das Gesamtsystem von ca. fünf Millionen Besucher am Tag und Tausend Bestandskunden besucht und genutzt.
+
+
+
 
 \section{Deployment Pipeline} \label{sec:pipeline}
 
@@ -309,10 +308,11 @@ Das Wirk Deployment wird über Nacht durchgeführt um möglich wenig den laufend
 Durch diese Technik ist jederzeit eine Erreichbarkeit der WebApplikation gesichert.
 
 
+
+
 \section{Task 01: Extension zur Reisekostenkalkulation} \label{sec:pipeline}
 
-$TODO$
-Da viele Softwaremodule des Congstar Webshops also Typo3 Extension umgesetzt sind, habe ich im Zuge 
+Da viele Softwaremodule des Congstar Webshop und Vertriebsportal also Typo3 Extension umgesetzt sind, habe ich im Zuge 
 meiner Einarbeitung eine eigene Extension entwickelt, die als Reiseplanungstool eingesetzt werden kann.
 Ziel der Extension ist es, Personen eine grobe Kalkulation der Kosten offenzulegen, über Reiseziele, 
 die sie gerne bereisen würden, von denen sie aber nicht wissen, welche Kosten auf sie zukommen. 
@@ -320,7 +320,10 @@ Informationen über Reiseziele und mögliche Kosten sollen über entsprechende A
 Der Schwerpunkt der Umsetzung lag in der Erstellung und Konfiguration der Extension, sodass Sie über das
 Typo3 Backend eingebunden werden kann und mit zugewiesener URL im Browser aufrufbar ist.
 
-\section{Task 02: Rollen-basierte Zuordnung der Bestandskundenverwaltung (CD 6929)} \label{sec:t02}
+
+
+
+\section{Task 02: Rollen-basierte Zuordnung der Bestandskundenverwaltung} \label{sec:t02}
 
 Ziel war es, dass die Bestandskundenfunktionalität rollen-basiert zugeordnet werden kann, 
 damit sie nur den Sales-Partnern zur Verfügung steht, die die Funktion auch nutzen dürfen.
@@ -333,22 +336,43 @@ Zusätzlich wurde die Funktionalität des Sales-Partner-Objektes erweitert, soda
 welche Gruppe er inne hat. Dadurch wird für den jeweiligen Sales-Partner im Congstar Vertriebsportal,
 nur die Funktionalität zur Verfügung gestellt, die ihm zugeordnet ist.
 
-\section{Task 03: Madeira POS Kartenaktivierung (CD 7227)}
 
-$TODO$
-- Flexform erweitern
-- Template erweitern
 
-\section{Task 04: Webservice implementieren (CD 7126)}
 
-$TODO$
-Infos aus dem JIRA extrahieren
+\section{Task 03: Content Box erstellen und anzeigen}
 
-\section{Task 04: Kunden-Authentifizierung durchführen}
+Damit Kunden bei der POS Kartenaktivierung informiert werden, wie sie den Congstar Mixer bei der POS Kartenaktivierung
+nutzen können, soll oberhalb vom Mixer eine Content Box eingeblendet werden, die eine Beschreibung beinhaltet.
+Dafür wurde in der eft Extension eine neue Flexform angelegt für die Content Box angelegt.
+Diese wurde so konfiguriert, dass die Content Box im Typo3 Backend von den Redakteuren redaktionell pflegbar ist.
+Weiter galt es zu beachten, dass die Content Box zum einen nur angezeigt werden soll,
+wenn es sich um ein 9ct. Prepaid Madeira Produkt handelt und zum anderen nur wenn der Mixer angezeigt wird.
+Dazu wurde sowohl die Logik im Controller angepasst, als auch das bestehende Template erweitert.
 
-$TODO$
-Infos aus dem JIRA extrahieren
-mTan-Verfahren
+
+
+
+\section{Task 04: Webservice für den Kundenservice implementieren}
+
+Aufgabe war es, die API der eft Extension um die Kunden-Authentifizierung zu erweitern.
+Die API der eft Extension ruft dabei über einen Webservice die AAX$^2$ auf, um den Kunden zu authentifizieren.
+Dies geschieht über einen SOAP call 
+\begin{lstlisting}
+public function authenticateByMtan($customerId, $mTan)
+\end{lstlisting}
+bei der eine mTan und die Kundennummer an die AAX$^2$ übergeben wird.
+War die Kundenauthentifizierung erfolgreich, so liefert die AAX$^2$ ein Kunden-Objekt zurück, welches
+danach in der Session gespeichert wird.
+Treten jedoch Fehler auf, sollen folgende Exceptions diese abfangen:
+
+\begin{itemize}
+	\item EFT-API wirft Exception A, wenn mTan falsch/ungültig
+	\item EFT-API wirft Exception B, wenn mTan abgelaufen (das passiert nach 20 Minuten)
+	\item EFT-API wirft Exception C, wenn der Webservice der AAX$^2$ nicht verfügbar ist
+\end{itemize}
+
+
+
 
 \section{Task 05: Konfiguration eines Jenkins Job}
 
@@ -366,6 +390,9 @@ der Extension $congstar_eft_rest_api$ zuständig ist.
 - Dabei muss konfiguriert werden unter welchen Repository, die Extension zu finden ist.
 - PHPMD
 
+
+
+
 \section{Task 06: Erstellung von Databuildern}
 
 $TODO$ Im Zuge dieses Tasks wurden DataBuilder erzeugt, die das Generieren von Mock-Objekten in Unit-Tests erleichtert.
@@ -373,9 +400,15 @@ $TODO$ Im Zuge dieses Tasks wurden DataBuilder erzeugt, die das Generieren von M
 $TODO$ Beispiel-Code 
 $TODO$ Erläuterung wieso DataBuilder in dem Fall sinnvoll sind
 
+
+
+
 \section{Task 07: Durchstich OptionsGroups}
 
 $TODO$ Beschreibung als $eft_core$ extrahieren
+
+
+
 
 \section{Task 08: Durchstich ContractDuration}
 
@@ -403,9 +436,15 @@ Abstimmung mit AAX (Null-Option!?) (PO)
 API Dokumentation erstellt
 Profiling erstellt
 
+
+
+
 \section{Task 09: Property hasMixableOptions an Produkt ergänzen}
 
 $TODO$ nachschauen ob Konversion bei diesem Task mit inbegriffen war
+
+
+
 
 \section{Task 10: Implementierung von CodeSniffern zur Überprüfung von Namespace-Deklaration, File Doc Comment und Use-Statements von PHP Dateien}
 
@@ -473,15 +512,17 @@ prüfenden Dateien angegeben. Zusätzlich wurde die Einstellung getroffen, dass 
 in die Ausgabedatei checkstyle.xml hinzuzufügen. Dadurch ist es möglich innerhalb des Jenkins Job
 visualisiert zu bekommen, wo eine Warnung oder Fehler aufgetreten ist.
 
+
+
 \section{Task 11: Implementierung eines CodeSniffers zu Überprüfung von Code Coverage Ignore Annotationen}
 
 Umsetzung eines weiteren CodeSniffers der den PHP Code auf Code Coverage Ignore Annotations prüfen soll.
-Mit Hilfe der Code Coverage Ignore Annotations ist möglich gezielt Codezeilen, Methoden oder gar ganze 
+Mit Hilfe der Code Coverage Ignore Annotations ist gezielt möglich Codezeilen, Methoden oder gar ganze 
 Klassen, von den PHP Metriken unbeachtet zu lassen, sodass die Code Coverage nicht sinkt, falls für
 diesen Code keine Unit Tests existieren. 
-Es kann auch manchmal der Fall sein, dass solche Annotations Sinn machen, wenn Code beispielsweise
-nicht testbar ist. Es war eine Teamentscheidung zu sagen, dass sie die Code Coverage für Unit Tests transparent
-halten und somit auf Code Coverage Ignore Annotations verzichten möchte.
+Es kann auch durchaus manchmal der Fall sein, dass solche Annotations Sinn machen, wenn Code beispielsweise
+nicht testbar ist. Es war eine Teamentscheidung zu sagen, dass die Code Coverage für Unit Tests transparent zu
+halten und somit auf Code Coverage Ignore Annotations zu verzichten.
 
 Folgende Codebeispiele zeigen die Annotations auf die geprüft werden soll.
 
@@ -489,23 +530,28 @@ Folgende Codebeispiele zeigen die Annotations auf die geprüft werden soll.
 /**
  * @codeCoverageIgnore
  */
-\end{lstlisting} \label{codeCoverageIgnore}
+\end{lstlisting} 
 
 \begin{lstlisting} 
 // @codeCoverageIgnoreStart
 ... hier steht ein bisschen Code
 // "codeCoverageIgnoreEnd
-\end{lstlisting} \label{codeCoverageIgnore2}
+\end{lstlisting} 
 
-Sobald eine solche Annotation im Code entdeckt wurde, wird eine Warnung geworfen, die später
-bei den Ergebnissen des Build-Jobs angezeigt wird.
+Sobald eine solche Annotation im Code entdeckt wurde, wird eine Warnung geworfen, die später bei den Ergebnissen des Build-Jobs angezeigt wird.
 
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{images/snifferResult.png}
 \centering
 \end{figure}
 
+
+\section{CodeReview}
+
+
 \section{Behobene Issues} \label{sec:issues}
+
+
 
 \newpage
 
