@@ -355,12 +355,12 @@ Dazu wurde sowohl die Logik im Controller angepasst, als auch das bestehende Tem
 \section{Task 04: Webservice für den Kundenservice implementieren}
 
 Aufgabe war es, die API der eft Extension um die Kunden-Authentifizierung zu erweitern.
-Die API der eft Extension ruft dabei über einen Webservice die AAX$^2$ auf, um den Kunden zu authentifizieren.
+Die API der eft Extension ruft dabei über einen Webservice der AAX$^2$ auf, um den Kunden zu authentifizieren.
 Dies geschieht über einen SOAP call 
 \begin{lstlisting}
 public function authenticateByMtan($customerId, $mTan)
 \end{lstlisting}
-bei der eine mTan und die Kundennummer an die AAX$^2$ übergeben wird.
+bei dem eine mTan und die Kundennummer an die AAX$^2$ übergeben wird.
 War die Kundenauthentifizierung erfolgreich, so liefert die AAX$^2$ ein Kunden-Objekt zurück, welches
 danach in der Session gespeichert wird.
 Treten jedoch Fehler auf, sollen folgende Exceptions diese abfangen:
@@ -370,7 +370,6 @@ Treten jedoch Fehler auf, sollen folgende Exceptions diese abfangen:
 	\item EFT-API wirft Exception B, wenn mTan abgelaufen (das passiert nach 20 Minuten)
 	\item EFT-API wirft Exception C, wenn der Webservice der AAX$^2$ nicht verfügbar ist
 \end{itemize}
-
 
 
 
@@ -546,6 +545,28 @@ Sobald eine solche Annotation im Code entdeckt wurde, wird eine Warnung geworfen
 \end{figure}
 
 
+
+
+\section{Task 12: Webservice für Vertragsverlängerung implementieren}
+
+Der Salespartner hat die Möglichkeit im Congstar Vertriebsportal, Verträge eines
+Kunden zu verlängern, nachdem der Kunde per mTan authentifiziert wurde. 
+Sind die Kundendaten nach der Authentifizierung verfügbar kann der Salespartner 
+sich die Vertragsübersicht des Kunden anzeigen lassen. Durch aktiv gesetzten 
+Verlängerungsbutton ist ersichtlich welcher Vertrag verlängerbar ist.
+
+$$ PLATZIERE BILD FÜR DIE KUNDENÜBERSIHCT HIER $$
+
+Wird der Button gedrückt löst diesen Rest-Call aus der von eft-rest-api Extension
+verarbeitet wird. Diese wiederum spricht die eft-core Extension an, die das backend-seitige Domain-Model kapselt. Der Service der eft-core Extension ruft darauf folgend 
+die API der eft Extension auf, die letztendlich den zu implantierenden Webservice mit SOAP-Call
+auf die AAX$^2$ aufruft. Beim SOAP-Call werden die customerId des Kunden und die contractItemId des zu verlängernden Vertrags mitgegeben. Bei erfolgreichem Anfordern der 
+Daten ProlongationSuggestionCollection zurückgeliefert. Diese möglichen Folgeverträge in 
+die der Kunde verlängern kann. Dieser Collection wird bei der Rückgabe ins Frontend sowohl in der eft-core als auch eft-rest-api Extension konvertiert und dann weitergereicht. Anschließend werden die erhaltenen im Frontend gerenderd und der Salespartner landet auf der Bestellübersichtseite, auf der die potenziellen Folgeverträge angezeigt werden. 
+
+$$ PLATZIERE BILD FÜR DIE VERTRAGSÜBERSICHT HIER $$
+
+
 \section{CodeReview}
 
 Nachdem neuer Code entwickelt und durch Unit Tests getestet wurde, erstellt jeder Entwickler ein Code Review Task 
@@ -572,7 +593,7 @@ Was fehlte war lediglich eine Überprüfung ob in jeder Kategorie bereits eine O
 in einem solchen Fall ohne die zu-buchbaren Optionen anzuzeigen.
 
 \begin{figure}[h]
-\includegraphics[width=\textwidth]{images/optionenzubuchung.PNG}
+\includegraphics[width=\textwidth]{images/optionenzubuchun.png}
 \centering
 \end{figure}
 
@@ -590,32 +611,34 @@ kennengelernt habe.
 Ähnlich wie in Issue \ref{sec:issue02} waren hier Änderungen im SCSS für ein Template notwenig, sodass
 der Tarifname bei der Produktübersichtsseite nicht mehr umbricht.
 
+\begin{figure}[h] \label{fig:triple}
+\includegraphics[width=\textwidth]{images/csc.PNG}
+\caption{vorausgewählte Triple SIM-Karte \cite{ccpp}}
+\centering
+\end{figure}
+
 
 \subsection{Anpassung des Hinweistexts zur Triple-SIM} 
 
 Nach Auswahl eines Tarifs und Auswahl eines Handys für diesen Tarif, gelangt im nächsten Schritt 
-auf die Auswahlseite für die Simkarte. In der Vergangenheit bestand die Möglichkeit abhängig vom
-Simkartentyp des Handys zwischen einer Nano, Hybrid oder Triple Simkarte zu wählen.
+auf die Auswahlseite für die SIM-Karte. In der Vergangenheit bestand die Möglichkeit abhängig vom
+SIM-Kartentyp des Handys zwischen einer Nano, Hybrid oder Triple SIM-Karte zu wählen.
 
-Inzwischen ist es jedoch so das unabhängig vom Gerät und benötigter Simkarte nur noch die Triple Simkarte
-ausgeliefert wird. Diese bietet für alle Gerätetypen, die passende Simkarte bereit.
+Inzwischen ist es jedoch so das unabhängig vom Gerät und benötigter SIM-Kkarte nur noch die Triple SIM-Karte
+ausgeliefert wird. Diese bietet für alle Gerätetypen, die passende SIM-Karte bereit.
 
 Wie in Abbildung \ref{fig:triple} treten bei der Anzeige der verschiedenen Informationen noch Fehler auf.
-
 \begin{figure}[h] \label{fig:triple}
 \includegraphics[width=\textwidth]{images/triple.PNG}
-\caption{vorausgewählte Triple Simkarte \cite{ccpp}}
+\caption{vorausgewählte Triple SIM-Karte \cite{ccpp}}
 \centering
 \end{figure}
 
-$$TODO$$
+Bei den beiden Sätzen: 'Für das Gerät Samsung Galaxy SIII Neo blau Aktion benötigen Sie eine Hybrid-SIM. Der SIM-Kartentyp Hybrid-SIM ist bereits für Sie ausgewählt.', wird der Name der SIM-Karte dynamisch aus den Handyobjekt geladen, während die Auswahl 'Triple -SIM - eine SIM-Karte, alle Formate' hart gecoded wurde. 
 
+Der Code wurde deshalb so geändert, dass für die Beschreibung für die bereits ausgewählte SIM-Karte ebenfalls die Triple-SIM ausgegeben wird.
 
 
 \newpage
-
-\bibliographystyle{plain}
-\bibliography{online}
-
 
 \end{document}
