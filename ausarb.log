@@ -1,15 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  24 AUG 2015 19:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.26)  25 AUG 2015 20:01
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
 **ausarb.tex
-(./ausarb.tex
+(ausarb.tex
 LaTeX2e <2014/05/01>
-Babel <3.9k> and hyphenation patterns for 78 languages loaded.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+Babel <3.9l> and hyphenation patterns for 68 languages loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -23,39 +21,45 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2014/03/24 3.9k The Babel package
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel\babel.sty"
+Package: babel 2014/09/25 3.9l The Babel package
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/babel-german/german.ldf
-Language: german 2013/12/13 v2.7 German support for babel (traditional orthogra
-phy)
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/babel-german/germanb.ldf
-Language: germanb 2013/12/13 v2.7 German support for babel (traditional orthogr
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-german\german.ldf"
+Language: german 2014/10/10 v2.7b German support for babel (traditional orthogr
 aphy)
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2014/03/24 3.9k Babel common definitions
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-german\germanb.ldf"
+Language: germanb 2014/10/10 v2.7b German support for babel (traditional orthog
+raphy)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel\babel.def"
+File: babel.def 2014/09/25 3.9l Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 )
 \l@austrian = a dialect from \language\l@german 
-Package babel Info: Making " an active character on input line 107.
+Package babel Info: Making " an active character on input line 110.
 )))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2014/04/30 v1.2b Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
@@ -204,8 +208,8 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00B8 (decimal 184)
@@ -235,8 +239,8 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -259,14 +263,14 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/fontenc.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/mathptmx.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\mathptmx.sty"
 Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -302,37 +306,37 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/courier.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\courier.sty"
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/helvet.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\helvet.sty"
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
@@ -340,7 +344,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count89
 \lst@gtempboxa=\box26
 \lst@token=\toks17
@@ -354,32 +358,32 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \lst@lineno=\count94
 \lst@maxwidth=\dimen109
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 \c@lstnumber=\count95
 \lst@skipnumbers=\count96
 \lst@framebox=\box27
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2014/03/04 1.5c listings configuration
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
-Package: listings 2014/03/04 1.5c (Carsten Heinz)
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 137.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/03/04 1.5c listings language file
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2014/03/04 1.5c listings language file
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
+File: lstlang2.sty 2014/09/06 1.5e listings language file
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count97
 \float@exts=\toks18
@@ -390,18 +394,18 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@listing=\toks20
 \c@listing=\count98
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count99
@@ -416,11 +420,12 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen116
 \Gm@layoutvoffset=\dimen117
 \Gm@dimlist=\toks21
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
 \f@ncyO@erh=\skip45
@@ -431,24 +436,22 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 \f@ncyO@olf=\skip50
 \f@ncyO@orf=\skip51
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/bibtopic/bibtopic.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\bibtopic\bibtopic.sty"
 Package: bibtopic 2006/09/08 v1.1a Sectioned Bibliographies
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@btauxfile=\count102
 \bt@infilea=\read1
 \bt@infileb=\read2
 \bt@outfile=\write3
 \bt@tempboxa=\box30
-) (./ausarb.aux
+) (ausarb.aux
 
 LaTeX Warning: Label `sec:pipeline' multiply defined.
 
 )
-\openout1 = `ausarb.aux'.
-
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
@@ -462,12 +465,12 @@ LaTeX Font Info:    ... okay on input line 71.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 71.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1ptm.fd
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 \big@size=\dimen118
 
-(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count103
 \scratchdimen=\dimen119
@@ -480,50 +483,7 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \MPnumerator=\count107
 \makeMPintoPDFobject=\count108
 \everyMPtoPDFconversion=\toks23
-) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 \c@lstlisting=\count109
 
 *geometry* driver: auto-detecting
@@ -562,30 +522,30 @@ e
 
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 72
 .
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd"
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 72
 .
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd"
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 72
 .
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd"
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 72
 .
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd"
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 72.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
@@ -596,7 +556,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
  [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 77.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
@@ -607,7 +567,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 118.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 119.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1phv.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
@@ -637,7 +597,7 @@ Overfull \hbox (3.58775pt too wide) in paragraph at lines 173--174
 -on und Be-stell-pro-zes-sen, Kampagnen-
  []
 
-<images/Sites/Congstar_Main.png, id=18, 1093.08376pt x 970.62625pt>
+<images/Sites/Congstar_Main.png, id=17, 1093.08376pt x 970.62625pt>
 File: images/Sites/Congstar_Main.png Graphic file (type png)
 
 <use images/Sites/Congstar_Main.png>
@@ -648,7 +608,7 @@ Package pdftex.def Info: images/Sites/Congstar_Main.png used on input line 180.
 
 LaTeX Warning: Citation `cmain' on page 5 undefined on input line 182.
 
-<images/Sites/Congstar_Mobil_CSC.png, id=19, 1093.08376pt x 996.72375pt>
+<images/Sites/Congstar_Mobil_CSC.png, id=18, 1093.08376pt x 996.72375pt>
 File: images/Sites/Congstar_Mobil_CSC.png Graphic file (type png)
 
 <use images/Sites/Congstar_Mobil_CSC.png>
@@ -660,7 +620,7 @@ Package pdftex.def Info: images/Sites/Congstar_Mobil_CSC.png used on input line
 LaTeX Warning: Citation `ccsc' on page 5 undefined on input line 188.
 
 [5 <./images/Sites/Congstar_Main.png>]
-<images/Sites/Congstar_CPP.png, id=23, 1093.08376pt x 996.72375pt>
+<images/Sites/Congstar_CPP.png, id=22, 1093.08376pt x 996.72375pt>
 File: images/Sites/Congstar_CPP.png Graphic file (type png)
 
 <use images/Sites/Congstar_CPP.png>
@@ -671,7 +631,7 @@ Package pdftex.def Info: images/Sites/Congstar_CPP.png used on input line 192.
 LaTeX Warning: Citation `ccpp' on page 6 undefined on input line 194.
 
 [6 <./images/Sites/Congstar_Mobil_CSC.png> <./images/Sites/Congstar_CPP.png>]
-<images/Sites/Congstar_Breitband.png, id=27, 1128.215pt x 1106.1325pt>
+<images/Sites/Congstar_Breitband.png, id=26, 1128.215pt x 1106.1325pt>
 File: images/Sites/Congstar_Breitband.png Graphic file (type png)
 
 <use images/Sites/Congstar_Breitband.png>
@@ -682,7 +642,7 @@ Package pdftex.def Info: images/Sites/Congstar_Breitband.png used on input line
 
 LaTeX Warning: Citation `cb' on page 7 undefined on input line 203.
 
-<images/Sites/Congstar_Breitband_CSC.png, id=28, 1128.215pt x 912.40875pt>
+<images/Sites/Congstar_Breitband_CSC.png, id=27, 1128.215pt x 912.40875pt>
 File: images/Sites/Congstar_Breitband_CSC.png Graphic file (type png)
 
 <use images/Sites/Congstar_Breitband_CSC.png>
@@ -695,7 +655,7 @@ LaTeX Warning: Citation `cbcsc' on page 7 undefined on input line 210.
 
 [7 <./images/Sites/Congstar_Breitband.png> <./images/Sites/Congstar_Breitband_C
 SC.png>]
-<images/Sites/White_Label/Ja_Mobil.png, id=33, 1122.1925pt x 986.68625pt>
+<images/Sites/White_Label/Ja_Mobil.png, id=32, 1122.1925pt x 986.68625pt>
 File: images/Sites/White_Label/Ja_Mobil.png Graphic file (type png)
 
 <use images/Sites/White_Label/Ja_Mobil.png>
@@ -707,7 +667,7 @@ ne 218.
 LaTeX Warning: Citation `ja' on page 8 undefined on input line 220.
 
 
-<images/Sites/White_Label/Ja_Mobil_CSC.png, id=34, 1097.09875pt x 848.16875pt>
+<images/Sites/White_Label/Ja_Mobil_CSC.png, id=33, 1097.09875pt x 848.16875pt>
 File: images/Sites/White_Label/Ja_Mobil_CSC.png Graphic file (type png)
 
 <use images/Sites/White_Label/Ja_Mobil_CSC.png>
@@ -718,7 +678,7 @@ t line 224.
 
 LaTeX Warning: Citation `jacsc' on page 8 undefined on input line 226.
 
-<images/Sites/White_Label/Penny_Mobil.png, id=35, 1122.1925pt x 1062.97125pt>
+<images/Sites/White_Label/Penny_Mobil.png, id=34, 1122.1925pt x 1062.97125pt>
 File: images/Sites/White_Label/Penny_Mobil.png Graphic file (type png)
 
 <use images/Sites/White_Label/Penny_Mobil.png>
@@ -731,7 +691,7 @@ LaTeX Warning: Citation `penny' on page 8 undefined on input line 233.
 
 [8 <./images/Sites/White_Label/Ja_Mobil.png> <./images/Sites/White_Label/Ja_Mob
 il_CSC.png>]
-<images/Sites/White_Label/Penny_Mobil_CSC.png, id=39, 1097.09875pt x 848.16875p
+<images/Sites/White_Label/Penny_Mobil_CSC.png, id=38, 1097.09875pt x 848.16875p
 t>
 File: images/Sites/White_Label/Penny_Mobil_CSC.png Graphic file (type png)
  <use images/Sites/White_Label/Penny_Mobil_CSC.png>
@@ -748,9 +708,9 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 244.
 
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./images/DeploymentPipeline.pdf): PD
-F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/DeploymentPipeline.pdf, id=43, 597.50829pt x 303.0221pt>
+pdfTeX warning: pdflatex (file ./images/DeploymentPipeline.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<images/DeploymentPipeline.pdf, id=42, 597.50829pt x 303.0221pt>
 File: images/DeploymentPipeline.pdf Graphic file (type pdf)
 
 <use images/DeploymentPipeline.pdf>
@@ -760,7 +720,7 @@ Package pdftex.def Info: images/DeploymentPipeline.pdf used on input line 268.
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 277.
 
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsptm.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
@@ -773,7 +733,7 @@ Objektes er-wei-tert, so-dass die-ser Aus-
 
 [13]
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 360.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1pcr.fd
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 Overfull \hbox (40.2333pt too wide) in paragraph at lines 388--392
@@ -793,23 +753,40 @@ ts
 LaTeX Warning: Citation `SquizlabPHPCodeSniffer' on page 16 undefined on input 
 line 491.
 
-[16] <images/snifferResult.png, id=120, 799.98875pt x 210.7875pt>
-File: images/snifferResult.png Graphic file (type png)
+[16] <images/resultSniffer.JPG, id=119, 805.50937pt x 427.5975pt>
+File: images/resultSniffer.JPG Graphic file (type jpg)
 
-<use images/snifferResult.png>
-Package pdftex.def Info: images/snifferResult.png used on input line 544.
-(pdftex.def)             Requested size: 398.33858pt x 104.95927pt.
+<use images/resultSniffer.JPG>
+Package pdftex.def Info: images/resultSniffer.JPG used on input line 544.
+(pdftex.def)             Requested size: 398.33858pt x 211.45589pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17] [18 <./images/snifferResult.png>]
+[17] [18 <./images/resultSniffer.JPG>]
+<images/optionenzubuchung.PNG, id=126, 642.14906pt x 558.58687pt>
+File: images/optionenzubuchung.PNG Graphic file (type png)
+
+<use images/optionenzubuchung.PNG>
+Package pdftex.def Info: images/optionenzubuchung.PNG used on input line 575.
+(pdftex.def)             Requested size: 398.33858pt x 346.5078pt.
+ [19 <./images/optionenzubuchung.PNG>]
+<images/triple.PNG, id=133, 505.89pt x 340.27126pt>
+File: images/triple.PNG Graphic file (type png)
+ <use images/triple.PNG>
+Package pdftex.def Info: images/triple.PNG used on input line 606.
+(pdftex.def)             Requested size: 398.33858pt x 267.93387pt.
+
+
+LaTeX Warning: Citation `ccpp' on page 20 undefined on input line 607.
+
+[20 <./images/triple.PNG>]
 
 Package bibtopic Warning: Ignoring `\bibliography' command
-(bibtopic)                (not compatible with bibtopic.sty) on input line 564.
+(bibtopic)                (not compatible with bibtopic.sty) on input line 618.
 
 
-(./ausarb.aux)
+(ausarb.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -818,24 +795,22 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7371 strings out of 493117
- 108038 string characters out of 6135432
- 387754 words of memory out of 5000000
- 10688 multiletter control sequences out of 15000+600000
- 50036 words of font info for 80 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 38i,12n,43p,898b,2886s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fon
-ts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/u
-rw/times/utmri8a.pfb>
-Output written on ausarb.pdf (18 pages, 6279743 bytes).
+ 7053 strings out of 493698
+ 101434 string characters out of 3144373
+ 387177 words of memory out of 3000000
+ 10253 multiletter control sequences out of 15000+200000
+ 50036 words of font info for 80 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 27i,12n,43p,898b,2886s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
+mb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ausarb.pdf (20 pages, 6789026 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 159 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

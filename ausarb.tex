@@ -541,15 +541,74 @@ Folgende Codebeispiele zeigen die Annotations auf die geprüft werden soll.
 Sobald eine solche Annotation im Code entdeckt wurde, wird eine Warnung geworfen, die später bei den Ergebnissen des Build-Jobs angezeigt wird.
 
 \begin{figure}[h]
-\includegraphics[width=\textwidth]{images/snifferResult.png}
+\includegraphics[width=\textwidth]{images/resultSniffer.JPG}
 \centering
 \end{figure}
 
 
 \section{CodeReview}
 
+Nachdem neuer Code entwickelt und durch Unit Tests getestet wurde, erstellt jeder Entwickler ein Code Review Task 
+für den eigens geschriebenen Code. Dies geschieht im Congstar Team mit Hilfe von Crucible. Crucible ist ein Tool 
+von Atlassien um Code Reviews zu erstellen. Den Code für das Code Review bezieht Crucible dabei direkt
+aus den Git- und SVN-Repositories. Durch vorhanden sein der Repository Historie ist es möglich jeden Commit
+mit ins Code Review aufzunehmen, um später gezielt Änderungen betrachten zu können. Der in Crucible sichtbare Code
+kann dort direkt mit Kommentaren und Verbesserungsvorschlägen versehen werden.
+Gegen Ende meines Praktikums vielen auch solche Task in meinen Aufgabenbereich.
+
 
 \section{Behobene Issues} \label{sec:issues}
+
+\subsection{Issue 01: Optionsmanagement CSC - Optimierung der Anzeige für gebuchte Optionen}
+
+Congstar bieten seinen Kunden im CSC seines Webshops die Möglichkeit jederzeit neue Optionen dazu zu buchen oder umzubuchen.
+Dabei gibt es Optionen in drei Kategorien: Optionen für SMS, für mobiles Internet und für Telefonie.
+Für ein Tarif Produkt kann für jede Kategorie jedoch nur eine Option ausgewählt werden.
+
+Thema dieses Issues war, dass auch bei drei gebuchten Optionen aus jeder Kategorie noch der Bereich anzeigt wird,
+indem die zu buchbaren Optionen stehen sollten. 
+
+Was fehlte war lediglich eine Überprüfung ob in jeder Kategorie bereits eine Option ausgewählt ist um das Template,
+in einem solchen Fall ohne die zu-buchbaren Optionen anzuzeigen.
+
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{images/optionenzubuchung.PNG}
+\centering
+\end{figure}
+
+
+\subsection{Issue 02: Abstände auf der MeineProdukte-Seite im CSC auf den Inhalt anpassen} \label{sec:issue02}
+
+Das Problem bei diesem Issue bestand darin, dass der Style des Templates an einer bestimmten Stelle, für den Text
+der Tarifnamen fest definiert war und so bei langen Tarifnamen, der Text unschön umgebrochen ist.
+Hier mussten lediglich Änderungen im SCSS vorgenommen werden, wodurch ich den Umgang mit SASS und compass
+kennengelernt habe.
+
+
+\subsection{Issue 03: Abstände auf der MeineProdukte-Seite (Übersicht) im CSC auf den Inhalt anpassen} 
+
+Ähnlich wie in Issue \ref{sec:issue02} waren hier Änderungen im SCSS für ein Template notwenig, sodass
+der Tarifname bei der Produktübersichtsseite nicht mehr umbricht.
+
+
+\subsection{Anpassung des Hinweistexts zur Triple-SIM} 
+
+Nach Auswahl eines Tarifs und Auswahl eines Handys für diesen Tarif, gelangt im nächsten Schritt 
+auf die Auswahlseite für die Simkarte. In der Vergangenheit bestand die Möglichkeit abhängig vom
+Simkartentyp des Handys zwischen einer Nano, Hybrid oder Triple Simkarte zu wählen.
+
+Inzwischen ist es jedoch so das unabhängig vom Gerät und benötigter Simkarte nur noch die Triple Simkarte
+ausgeliefert wird. Diese bietet für alle Gerätetypen, die passende Simkarte bereit.
+
+Wie in Abbildung \ref{fig:triple} treten bei der Anzeige der verschiedenen Informationen noch Fehler auf.
+
+\begin{figure}[h] \label{fig:triple}
+\includegraphics[width=\textwidth]{images/triple.PNG}
+\caption{vorausgewählte Triple Simkarte \cite{ccpp}}
+\centering
+\end{figure}
+
+$$TODO$$
 
 
 
