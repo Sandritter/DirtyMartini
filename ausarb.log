@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.26)  26 AUG 2015 19:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.26)  26 AUG 2015 19:45
 entering extended mode
 **ausarb
 (ausarb.tex
@@ -855,17 +855,22 @@ l.68
 l.68 
      
 ? 
-) [26] (ausarb.aux)
+) [26]
+Overfull \hbox (0.10063pt too wide) in paragraph at lines 707--712
+ [] 
+ []
+
+[27] (ausarb.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7084 strings out of 493698
- 102034 string characters out of 3144373
+ 7086 strings out of 493698
+ 102052 string characters out of 3144373
  387177 words of memory out of 3000000
- 10276 multiletter control sequences out of 15000+200000
- 49777 words of font info for 78 fonts, out of 3000000 for 9000
+ 10277 multiletter control sequences out of 15000+200000
+ 52499 words of font info for 80 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  27i,12n,43p,1316b,2886s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
@@ -874,9 +879,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
 1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
 mb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ausarb.pdf (26 pages, 6843347 bytes).
+Output written on ausarb.pdf (27 pages, 6844100 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
+ 187 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
