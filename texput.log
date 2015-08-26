@@ -1,7 +1,5 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2014.11.17)  23 AUG 2015 21:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.26)  26 AUG 2015 17:52
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
 **online.tex
 
 ! Emergency stop.
@@ -11,11 +9,11 @@ entering extended mode
 
  
 Here is how much of TeX's memory you used:
- 3 strings out of 493118
- 101 string characters out of 6135458
- 52906 words of memory out of 5000000
- 3568 multiletter control sequences out of 15000+600000
- 3640 words of font info for 14 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 0i,0n,0p,1b,6s stack positions out of 5000i,500n,10000p,200000b,80000s
-No pages of output.
+ 2 strings out of 493698
+ 16 string characters out of 3144373
+ 52149 words of memory out of 3000000
+ 3432 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 0i,0n,0p,1b,6s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

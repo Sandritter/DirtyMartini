@@ -1,3 +1,69 @@
-%%% produced automatically by bibtopic.sty v1.1
-%%% produced automatically by bibtopic.sty v1.1
-\csname bt@warn@outdated\endcsname{ausarb2}
+\begin{thebibliography}{10}
+
+\bibitem{aoe}
+AOE GmbH.
+\newblock Aoe gmbh.
+\newblock {\em https://www.aoe.com/de}, 2015.
+
+\bibitem{compax}
+Compax GmbH.
+\newblock Compax software development gmbh.
+\newblock {\em http://www.compax.at}, 2015.
+
+\bibitem{congstarbcsc}
+Congstar GmbH.
+\newblock Breitband csc kundencenter.
+\newblock {\em https://breitband.congstar.de/meincongstar}, 2015.
+
+\bibitem{congstarb}
+Congstar GmbH.
+\newblock Breitband webseite.
+\newblock {\em https://breitband.congstar.de}, 2015.
+
+\bibitem{congstarv}
+Congstar GmbH.
+\newblock Cpp vertriebspartnerportal.
+\newblock {\em https://vertriebsportal.congstar.de}, 2015.
+
+\bibitem{congstarcsc}
+Congstar GmbH.
+\newblock Csc kundencenter.
+\newblock {\em https://www.congstar.de/meincongstar}, 2015.
+
+\bibitem{congstar}
+Congstar GmbH.
+\newblock Hauptwebseite.
+\newblock {\em https://www.congstar.de/}, 2015.
+
+\bibitem{pennycsc}
+Congstar GmbH{,} PENNY~Markt GmbH.
+\newblock Penny mobil csc kundencenter.
+\newblock {\em http://pennymobil.congstar.de/mein-pennymobil}, 2015.
+
+\bibitem{penny}
+Congstar GmbH{,} PENNY~Markt GmbH.
+\newblock Penny mobil webseite.
+\newblock {\em http://www.pennymobil.de}, 2015.
+
+\bibitem{jacsc}
+Congstar GmbH{,} REWE~Markt GmbH.
+\newblock Ja! mobil csc kundencenter.
+\newblock {\em https://jamobil.congstar.de/mein-jamobil}, 2015.
+
+\bibitem{ja}
+Congstar GmbH{,} REWE~Markt GmbH.
+\newblock Ja! mobil webseite.
+\newblock {\em http://www.jamobil.de}, 2015.
+
+\bibitem{squizlab}
+Squizlab.
+\newblock Php codesniffer.
+\newblock {\em https://www.squizlabs.com/php-codesniffer}, 2015.
+
+\bibitem{php:SquizlabPHPCodeSniffer}
+squizlabs.
+\newblock Php_codesniffer tokenizes php, javascript and css files and detects
+  violations of a defined set of coding standards.
+\newblock {\em https://github.com/squizlabs/PHP_CodeSniffer}, august 2015.
+
+\end{thebibliography}
